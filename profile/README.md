@@ -1,4 +1,4 @@
-# Github Guideline
+# Github Guideline
 
 ## Repository Creation Rules
 
