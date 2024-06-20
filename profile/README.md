@@ -1,4 +1,4 @@
-# 회사 깃허브 규칙입니다
+# Github Guideline
 
 ## Repository Creation Rules
 
