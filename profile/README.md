@@ -1,33 +1,34 @@
 # Github Guideline
 
-## Repository Creation Rules
+## 1. Repository Creation Rules
 
-1. The repository name should be in the format `projectname-projectgoal-language`, all in lowercase and separated by dashes.
-    - Example: `nexton-backend-typescript`, `jeff-marketmaking-javascript`
-2. The repository should be private.
+- Format: repository-name-repository**goal**-repository-language
+- Use lowercase letters
+- Use dashes (-)
+  - Example: nexton-backend-typescript, jeff-marketmaking-javascript
+- Include a README file providing an overview of the project
+- Set visibility to private
 
-## Commit Rules
+## 2. Commit Rules
 
-1. Commit messages must be concise, clear, and written in the present tense.
-2. Use the format `[Tag] Commit message`, where the tag indicates the type of change.
-    - Examples of tags: `[Add]`, `[Fix]`, `[Update]`, `[Remove]`
-3. If necessary, include a brief description of the changes in the commit body.
+- Commit messages should be concise, clear, and in the present tense
+- Format: commit-type-commit-description
+  - Example: add-new feature, fix-bug fix, update-feature update
+- Include a brief description in the body if necessary
 
-## Branch Rules
+## 3. Branch Rules
 
-1. Branch names should be all lowercase and use hyphens to separate words.
-2. Branch naming conventions:
-    - Feature Branch: `feature/<featurename>`
-    - Bug Fix Branch: `fix/<bugname>`
-3. All branches should be created from the `main` branch and merged regularly.
+- Branch names should be all lowercase, using hyphens (/) to separate words
+- Branch naming conventions:
+  - Feature branch: feature/<feature-name>
+    - Example: feature/user-authentication, feature/payment-gateway
+  - Fix branch: fix/<bug-name>
+    - Example: fix/login-error, fix/payment-bug
+- Branches should be created from main and merged regularly
 
-## Pull Request (PR) Rules
+## 4. Pull Request (PR) Rules
 
-1. All changes must be made through pull requests.
-2. The PR title should clearly describe the changes.
-3. The PR description should include:
-    - A summary of the changes
-    - Instructions for testing the changes
-    - Related issue numbers (if any)
-4. Assign a code reviewer (usually the project manager).
-5. Do not merge the PR without approval.
+- All changes must be made through a Pull Request
+- PR titles should clearly describe the changes
+- PR descriptions should include details of the changes
+- Assign the project manager (PM) or an administrator as the code reviewer
