@@ -31,4 +31,3 @@
 - All changes must be made through a Pull Request
 - PR titles should clearly describe the changes
 - PR descriptions should include details of the changes
-- Assign the project manager (PM) or an administrator as the code reviewer
