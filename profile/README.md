@@ -1,4 +1,5 @@
 # Github Guideline
+https://www.notion.so/blockwavelabs/f77e7d0e74b14d26963abad8aad58095?pvs=4
 ---
 ## Repository Creation Rules
 
