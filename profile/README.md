@@ -1,4 +1,6 @@
-# Repository Creation Rules
+# Github Guideline
+---
+## Repository Creation Rules
 
 - Name repositories in the format “repository-name-repository-content”.
 - Use lowercase letters and dashes (-).
