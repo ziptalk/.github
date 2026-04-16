@@ -1,0 +1,17 @@
+{
+  "name": "blockwave-coding-standards",
+  "description": "Blockwave Labs coding standards and conventions for AI-assisted development. Enforces commit formats, branch naming, PR rules, code review behavior, and coding patterns across all repositories.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Blockwave Labs",
+    "url": "https://github.com/ziptalk"
+  },
+  "repository": "https://github.com/ziptalk/.github",
+  "keywords": [
+    "coding-standards",
+    "conventions",
+    "code-review",
+    "blockwave"
+  ],
+  "license": "MIT"
+}
