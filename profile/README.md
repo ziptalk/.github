@@ -19,6 +19,4 @@ Read the full guidelines: [README.md](https://github.com/ziptalk/.github/blob/ma
 | Tool | Install |
 |------|---------|
 | Claude Code | `/plugin marketplace add ziptalk/.github` then `/plugin install blockwave-coding-standards@ziptalk` |
-| Codex CLI | Copy [`AGENTS.md`](https://github.com/ziptalk/.github/blob/main/AGENTS.md) to project root |
-| Gemini CLI | Copy [`GEMINI.md`](https://github.com/ziptalk/.github/blob/main/GEMINI.md) to project root |
-| Cursor | Copy [`.cursorrules`](https://github.com/ziptalk/.github/blob/main/.cursorrules) to project root |
+| Codex / Gemini CLI / Cursor | Copy [`AGENTS.md`](https://github.com/ziptalk/.github/blob/main/AGENTS.md) to project root |

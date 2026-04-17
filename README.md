@@ -202,38 +202,10 @@ Install the coding standards as a plugin in your AI coding tool.
 /plugin install blockwave-coding-standards@ziptalk
 ```
 
-**Codex CLI** -- add to your project's `.codex/config.toml`:
-
-```toml
-developer_instructions = """
-See the Blockwave Labs coding standards at:
-https://github.com/ziptalk/.github/blob/main/CLAUDE.md
-"""
-```
-
-Or copy the instructions file:
+**Codex / Gemini CLI / Cursor** -- copy `AGENTS.md` into your project root:
 
 ```bash
 curl -sO https://raw.githubusercontent.com/ziptalk/.github/main/AGENTS.md
-```
-
-**Gemini CLI** -- copy `GEMINI.md` into your project root:
-
-```bash
-curl -sO https://raw.githubusercontent.com/ziptalk/.github/main/GEMINI.md
-```
-
-**Cursor** -- copy `.cursorrules` into your project root:
-
-```bash
-curl -sO https://raw.githubusercontent.com/ziptalk/.github/main/.cursorrules
-```
-
-Or use the modern `.cursor/rules/` format:
-
-```bash
-mkdir -p .cursor/rules
-curl -o .cursor/rules/blockwave-standards.mdc https://raw.githubusercontent.com/ziptalk/.github/main/.cursor/rules/blockwave-standards.mdc
 ```
 
 ### For AI Agents (Git Direct)
@@ -243,8 +215,6 @@ Agent config files live at the root of this repo for direct git access:
 | Tool | File |
 |------|------|
 | Claude Code | `CLAUDE.md` |
-| Codex CLI | `AGENTS.md` |
-| Gemini CLI | `GEMINI.md` |
-| Cursor | `.cursorrules` |
+| Codex / Gemini CLI / Cursor | `AGENTS.md` |
 
 AI agents can read these directly from the repository without installing anything.
