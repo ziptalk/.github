@@ -6,21 +6,20 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 ROOT_DIR="$(dirname "$SCRIPT_DIR")"
+PLUGIN_DIR="$ROOT_DIR/plugins/blockwave-coding-standards"
 
-CLAUDE_MD="$ROOT_DIR/CLAUDE.md"
-AGENTS_MD="$ROOT_DIR/AGENTS.md"
-CURSORRULES="$ROOT_DIR/.cursorrules"
+CLAUDE_MD="$PLUGIN_DIR/CLAUDE.md"
+AGENTS_MD="$PLUGIN_DIR/AGENTS.md"
+CURSORRULES="$PLUGIN_DIR/.cursorrules"
 
 if [ ! -f "$CLAUDE_MD" ]; then
     echo "Error: CLAUDE.md not found at $CLAUDE_MD"
     exit 1
 fi
 
-# AGENTS.md is a direct copy (Codex and Gemini CLI read markdown the same way)
 cp "$CLAUDE_MD" "$AGENTS_MD"
 echo "Synced: AGENTS.md"
 
-# .cursorrules strips markdown bold syntax for plain-text compatibility
 sed 's/\*\*//g' "$CLAUDE_MD" > "$CURSORRULES"
 echo "Synced: .cursorrules"
 

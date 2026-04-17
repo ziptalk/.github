@@ -11,6 +11,7 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 ROOT_DIR="$(dirname "$SCRIPT_DIR")"
+PLUGIN_DIR="$ROOT_DIR/plugins/blockwave-coding-standards"
 TARGET_DIR="${2:-.}"
 
 copy_file() {
@@ -24,7 +25,7 @@ copy_file() {
             return
         fi
     fi
-    cp "$ROOT_DIR/$src" "$TARGET_DIR/$dst"
+    cp "$PLUGIN_DIR/$src" "$TARGET_DIR/$dst"
     echo "Installed: $dst"
 }
 

@@ -4,34 +4,26 @@ Building onchain products.
 
 [Website](https://blockwavelabs.io) | [GitHub](https://github.com/ziptalk)
 
-## AI-Native Development
+---
 
-This organization uses AI-native coding standards. AI agents working in any Blockwave Labs repository should follow the rules defined in this repo.
+## Coding Standards
 
-### For AI Tool Users
+This organization maintains shared coding standards that apply to all repositories.
 
-| Tool | How to use |
-|------|-----------|
-| **Claude Code** | Install as plugin: `ziptalk/.github` |
-| **Codex / Gemini CLI** | Copy `AGENTS.md` into your project root |
-| **Cursor** | Copy `.cursorrules` into your project root |
+### For Developers
 
-Or run the setup script:
+Read the full guidelines: [README.md](https://github.com/ziptalk/.github/blob/main/README.md)
 
-```bash
-# Clone and install for your tool
-git clone https://github.com/ziptalk/.github.git /tmp/ziptalk-standards
-bash /tmp/ziptalk-standards/scripts/setup.sh <tool>
-```
+Covers: repository naming, commit format, branch naming, PR process, code review checklist, and coding patterns.
 
-Where `<tool>` is one of: `claude`, `codex`, `cursor`, `all`
+### For AI Agents
 
-### What is Included
+This repo is a Claude Code plugin marketplace. Install it in your tool of choice:
 
-- Commit message format and conventions
-- Branch naming rules
-- Pull request standards and review checklist
-- Code review process for AI agents
-- Coding patterns (architecture, error handling, style, testing)
+| Tool | Install |
+|------|---------|
+| Claude Code | Add `ziptalk` marketplace, then `/install blockwave-coding-standards` |
+| Codex / Gemini CLI | Copy [`AGENTS.md`](https://github.com/ziptalk/.github/blob/main/plugins/blockwave-coding-standards/AGENTS.md) to project root |
+| Cursor | Copy [`.cursorrules`](https://github.com/ziptalk/.github/blob/main/plugins/blockwave-coding-standards/.cursorrules) to project root |
 
-See [CLAUDE.md](./CLAUDE.md) for the full rules.
+See [README.md](https://github.com/ziptalk/.github/blob/main/README.md#ai-agent-installation) for detailed setup instructions.
