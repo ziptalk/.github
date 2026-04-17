@@ -186,13 +186,15 @@ These patterns apply across all languages and frameworks.
 
 ---
 
-## AI Agent Installation
+## Installation
 
-This repository is also an AI agent plugin marketplace. AI coding tools can use these standards automatically.
+### For Humans (Plugin Install)
 
-### Claude Code (Plugin Install)
+Install the coding standards as a plugin in your AI tool:
 
-Add the marketplace to your Claude Code settings (`~/.claude/settings.json`):
+**Claude Code**
+
+Add the marketplace to `~/.claude/settings.json`:
 
 ```json
 {
@@ -207,33 +209,30 @@ Add the marketplace to your Claude Code settings (`~/.claude/settings.json`):
 }
 ```
 
-Then install the plugin:
+Then run:
 
 ```
 /install blockwave-coding-standards
 ```
 
-### Codex / Gemini CLI
-
-Copy `AGENTS.md` into your project root:
+**Codex / Gemini CLI** -- copy `AGENTS.md` into your project:
 
 ```bash
-curl -sO https://raw.githubusercontent.com/ziptalk/.github/main/plugins/blockwave-coding-standards/AGENTS.md
+curl -sO https://raw.githubusercontent.com/ziptalk/.github/main/AGENTS.md
 ```
 
-### Cursor
-
-Copy `.cursorrules` into your project root:
+**Cursor** -- copy `.cursorrules` into your project:
 
 ```bash
-curl -sO https://raw.githubusercontent.com/ziptalk/.github/main/plugins/blockwave-coding-standards/.cursorrules
+curl -sO https://raw.githubusercontent.com/ziptalk/.github/main/.cursorrules
 ```
 
-### Setup Script
+### For AI Agents (Git Direct)
 
-```bash
-git clone https://github.com/ziptalk/.github.git /tmp/ziptalk-standards
-bash /tmp/ziptalk-standards/scripts/setup.sh <tool>
-```
+Agent config files live at the root of this repo for direct git access:
 
-Where `<tool>` is: `claude`, `codex`, `gemini`, `cursor`, or `all`.
+- `CLAUDE.md` -- for Claude Code
+- `AGENTS.md` -- for Codex / Gemini CLI
+- `.cursorrules` -- for Cursor
+
+AI agents can read these directly from the repository without installing anything.
