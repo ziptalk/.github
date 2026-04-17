@@ -1,0 +1,22 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "ziptalk",
+  "owner": {
+    "name": "Blockwave Labs"
+  },
+  "metadata": {
+    "description": "Blockwave Labs coding standards and AI agent conventions",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "blockwave-coding-standards",
+      "description": "Coding standards, commit/branch/PR conventions, code review process, and coding patterns for all Blockwave Labs repositories",
+      "version": "1.0.0",
+      "source": "./plugins/blockwave-coding-standards",
+      "author": {
+        "name": "Blockwave Labs"
+      }
+    }
+  ]
+}

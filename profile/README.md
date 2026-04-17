@@ -14,16 +14,11 @@ This organization maintains shared coding standards that apply to all repositori
 
 Read the full guidelines: [README.md](https://github.com/ziptalk/.github/blob/main/README.md)
 
-Covers: repository naming, commit format, branch naming, PR process, code review checklist, and coding patterns.
-
-### For AI Agents
-
-This repo is a Claude Code plugin marketplace. Install it in your tool of choice:
+### For AI Tool Users
 
 | Tool | Install |
 |------|---------|
-| Claude Code | Add `ziptalk` marketplace, then `/install blockwave-coding-standards` |
-| Codex / Gemini CLI | Copy [`AGENTS.md`](https://github.com/ziptalk/.github/blob/main/plugins/blockwave-coding-standards/AGENTS.md) to project root |
-| Cursor | Copy [`.cursorrules`](https://github.com/ziptalk/.github/blob/main/plugins/blockwave-coding-standards/.cursorrules) to project root |
-
-See [README.md](https://github.com/ziptalk/.github/blob/main/README.md#ai-agent-installation) for detailed setup instructions.
+| Claude Code | `/plugin marketplace add ziptalk/.github` then `/plugin install blockwave-coding-standards@ziptalk` |
+| Codex CLI | Copy [`AGENTS.md`](https://github.com/ziptalk/.github/blob/main/AGENTS.md) to project root |
+| Gemini CLI | Copy [`GEMINI.md`](https://github.com/ziptalk/.github/blob/main/GEMINI.md) to project root |
+| Cursor | Copy [`.cursorrules`](https://github.com/ziptalk/.github/blob/main/.cursorrules) to project root |

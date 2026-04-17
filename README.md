@@ -190,49 +190,61 @@ These patterns apply across all languages and frameworks.
 
 ### For Humans (Plugin Install)
 
-Install the coding standards as a plugin in your AI tool:
+Install the coding standards as a plugin in your AI coding tool.
 
 **Claude Code**
 
-Add the marketplace to `~/.claude/settings.json`:
+```bash
+# Step 1: Add marketplace (one time)
+/plugin marketplace add ziptalk/.github
 
-```json
-{
-  "extraKnownMarketplaces": {
-    "ziptalk": {
-      "source": {
-        "source": "github",
-        "repo": "ziptalk/.github"
-      }
-    }
-  }
-}
+# Step 2: Install
+/plugin install blockwave-coding-standards@ziptalk
 ```
 
-Then run:
+**Codex CLI** -- add to your project's `.codex/config.toml`:
 
-```
-/install blockwave-coding-standards
+```toml
+developer_instructions = """
+See the Blockwave Labs coding standards at:
+https://github.com/ziptalk/.github/blob/main/CLAUDE.md
+"""
 ```
 
-**Codex / Gemini CLI** -- copy `AGENTS.md` into your project:
+Or copy the instructions file:
 
 ```bash
 curl -sO https://raw.githubusercontent.com/ziptalk/.github/main/AGENTS.md
 ```
 
-**Cursor** -- copy `.cursorrules` into your project:
+**Gemini CLI** -- copy `GEMINI.md` into your project root:
+
+```bash
+curl -sO https://raw.githubusercontent.com/ziptalk/.github/main/GEMINI.md
+```
+
+**Cursor** -- copy `.cursorrules` into your project root:
 
 ```bash
 curl -sO https://raw.githubusercontent.com/ziptalk/.github/main/.cursorrules
+```
+
+Or use the modern `.cursor/rules/` format:
+
+```bash
+mkdir -p .cursor/rules
+curl -o .cursor/rules/blockwave-standards.mdc https://raw.githubusercontent.com/ziptalk/.github/main/.cursor/rules/blockwave-standards.mdc
 ```
 
 ### For AI Agents (Git Direct)
 
 Agent config files live at the root of this repo for direct git access:
 
-- `CLAUDE.md` -- for Claude Code
-- `AGENTS.md` -- for Codex / Gemini CLI
-- `.cursorrules` -- for Cursor
+| Tool | File |
+|------|------|
+| Claude Code | `CLAUDE.md` |
+| Codex CLI | `AGENTS.md` |
+| Gemini CLI | `GEMINI.md` |
+| Cursor | `.cursorrules` |
 
 AI agents can read these directly from the repository without installing anything.
